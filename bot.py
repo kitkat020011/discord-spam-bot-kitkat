@@ -163,5 +163,6 @@ async def sendmessage(
     except Exception as e:
         print(f"Unexpected error: {e}")
 
-token = input("Enter your bot token: ")
+import os
+token = os.environ["DISCORD_TOKEN"]
 bot.run(token)
